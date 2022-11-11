@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ2byIsImlhdCI6MTY2ODIwMjcxNSwiZXhwIjoxNjY4MjAyNzQ1fQ.aXPm-jpiFnSqxDM4OPphaGeHaZsCcXqsaPNFLNodAs0
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ2byIsImlhdCI6MTY2ODIwMjcxNX0.kKnoiyM8pxdjx4W5n4chE_kDVyBKgm7YxCJRsa8whys"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Arvo"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJ2byIsImlhdCI6MTY2ODIwMjcxNX0.kKnoiyM8pxdjx4W5n4chE_kDVyBKgm7YxCJRsa8whys"
+}
